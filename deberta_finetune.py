@@ -71,7 +71,7 @@ for name, param in model.named_parameters():
     if param.requires_grad:
         print(name)
 
-with open('train_corpus.txt', 'r') as f_corpus:
+with open('deberta_train_corpus.txt', 'r') as f_corpus:
     data_list = list(f_corpus.readlines())
 data_list = [a.strip().split('\t') for a in data_list]
 shuffle(data_list)
