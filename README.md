@@ -1,17 +1,24 @@
 # EGT2: Entailment Graph Learning with Textual Entailment and Soft Transitivity
 
-This repository is going to contain the source code of the ACL 2022 long paper "Entailment Graph Learning with Textual Entailment and Soft Transitivity". [paper](http://arxiv.org/abs/2204.03286)
+This repository contains the source code of the ACL 2022 long paper "Entailment Graph Learning with Textual Entailment and Soft Transitivity". [paper](http://arxiv.org/abs/2204.03286)
 
 ## How to run
 
-1. Follow the Hosseini ACL2019 [repository](https://github.com/mjhosseini/linkpred_entgraph) to get local triples and base graphs for later usage. Suppose that you have a graph filefolder and testing dataset now:
+1. Download the evaluation [repository](https://github.com/mjhosseini/entgraph_eval) and the test dataset for later usage:
 
 ```
-ls ../gfiles/typedEntGrDir_NS_all_AUG_MC/
+git clone https://github.com/mjhosseini/entgraph_eval.git
+wget https://dl.dropboxusercontent.com/s/j7sgqhp8a27qgcf/gfiles.zip
+unzip gfiles.zip
+rm gfiles.zip
 ls ../gfiles/ent/
 ```
 
-2. Download the evaluation [repository](https://github.com/mjhosseini/entgraph_eval) for later usage.
+2. Follow the Hosseini ACL2019 [repository](https://github.com/mjhosseini/linkpred_entgraph) to get local triples and base graphs for later usage. Suppose that you have a graph filefolder now:
+
+```
+ls ../gfiles/typedEntGrDir_NS_all_AUG_MC/
+```
 
 3. Run the corpus generator with sentence generator $S$ to transfer the dataset into natural sentences:
 
